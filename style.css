@@ -1,0 +1,126 @@
+
+/* GENERAL STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe0ec, #ffc2d8, #fff0f5);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* MAIN CONTAINER */
+.container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 50px 40px;
+    border-radius: 25px;
+
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+
+    box-shadow: 0 10px 35px rgba(214, 100, 145, 0.2);
+    border: 2px solid white;
+}
+
+/* HEART */
+.heart {
+    font-size: 65px;
+    margin-bottom: 15px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* HEADING */
+h1 {
+    color: #d94f83;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#yesBtn {
+    background: #ff75a9;
+    color: white;
+}
+
+#yesBtn:hover {
+    background: #e84f8a;
+    transform: scale(1.1);
+}
+
+#noBtn {
+    background: #eeeeee;
+    color: #777;
+}
+
+#message {
+    color: #d94f83;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-5px) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateX(5px) rotate(10deg);
+    }
+
+    100% {
+        transform: translateX(-5px) rotate(-10deg);
+    }
+}
+
+.letter p {
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.letter .signature {
+    text-align: right;
+    margin-top: 30px;
+    font-style: italic;
+}
